@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pheonix 2</title>
+
+    <link rel="stylesheet" href="CSS/main.css">
+
+</head>
+
+<body>
+
+    <header>
+        <!--
+
+        <h2> Credits </h2>
+        <h2> Armor rating </h2>
+        <h2> Shield size calculator </h2>
+        <h2> States </h2>
+        <h2> Classes </h2>
+        <h2> Spell book </h2>
+-->
+
+
+    </header>
+
+    <main>
+        <div id="active" class="Credit-Classes hidden active">
+            <label for="Jobs"><h3>Class:</h3></label>
+            <select name="Job" id="Jobs">
+            <datalist id="Amt-Classes">
+		          <option value="undefined">Pick a Class</option>
+                <optgroup label="Melee Classes"> Melee </optgroup>
+		          <option value="0">Archer</option>
+		          <option value="1">Assassin</option>
+		          <option value="2">Barbarian</option>
+		          <option value="3">Monk</option>
+		          <option value="4">Scout</option>
+		          <option value="5">Warrior</option>
+                <optgroup label="Magic Classes"> Magic</optgroup>
+                    <option value="6">Bard</option>
+                    <option value="7">Druid</option>
+                    <option value="8">Healer</option>
+                    <option value="9">Wizard</option>
+                <optgroup label="Restricted"> Restricted </optgroup>
+                    <option value="10">Anti-Paladin</option>
+                    <option value="11">Monster</option>
+                    <option value="12">Paladin</option>
+		       </datalist>
+            </select>
+        <button onclick="jobOverview()"> See Class</button>
+
+          <figure id="AndyPic">
+          <img src="IMG/amtgard-andy/01-intro.jpg" alt="Andy says hi">
+          <figcaption> Click on Andy for specifics on the class.</figcaption>
+        </figure>
+    
+            <ul id="Credit-Data">
+                <li>Level</li>
+                <li>Credits</li>
+                <li>Till Next</li>
+                <li id="level"> 1 </li>
+                <li id="credits">  0 </li>
+                <li id="next"> 5 </li>
+            </ul>    
+            
+        </div>
+
+        <div class="Class-Specifics hidden" id=''>
+           
+           <label for="CurrentClass"><h3>Level:</h3></label>
+            <select name="Level" id="abilityLevel">
+            <datalist id="Level">
+		          <option value="undefined">Pick a Level</option>
+		          <option value="0">Charge Incant</option>
+		          <option value="1">1</option>
+		          <option value="2">2</option>
+		          <option value="3">3</option>
+		          <option value="4">4</option>
+		          <option value="5">5</option>
+                  <option value="6">6</option>
+		          <option value="7">LTP</option>
+		       </datalist>
+            </select>
+        <button onclick="abilityLevel()"> See Abilities</button></div>
+
+    </main>
+
+    <footer>
+
+        <p>&copy;<time datetime="2017">2017</time> Your Name</p>
+
+    </footer>
+    
+    <script src="./js/main.js"></script>
+</body>
+  
+</html>
+
+

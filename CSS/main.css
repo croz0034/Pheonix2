@@ -1,0 +1,60 @@
+*{
+    color: white;
+    background-color: black;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+h2{
+    position: static;
+    border: 4px outset;
+    padding: 1rem;
+}
+
+.hidden{
+    display: none;
+}
+ul{
+    margin: 1rem 0;
+}
+figure{
+    height: 100%;
+}
+li{
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid white
+}
+h3{
+    width: 20%;
+    height: 2rem;
+    Display: inline;
+}
+select{
+    width: 50%;
+    height: 2rem;
+}
+.Credit-Classes button{
+    height: 2rem;
+    width: 30%;
+    border: 4px outset;
+    margin: 1rem 0;
+}
+button:active{
+    border: 4px inset;
+}
+.credits{ padding: auto;}
+#active{
+    display:block;
+}
+#credits{
+    border: 4px outset;
+}
+
+figure img{
+    max-width: 100%;
+}
